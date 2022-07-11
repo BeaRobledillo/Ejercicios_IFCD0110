@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<!-- viewport meta to reset iPhone inital scale -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>Editorial EditRec</title>
+
+<link href="estilos/misestilos.css" rel="stylesheet" type="text/css">
+<!-- Ahora insertamos el Js que hace que el menu se pliegue y despliegue -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+
+</head>
+
+<body>
+
+
+<!--INICIO CONTENEDOR ******************************************************************** -->
+<div id="contenedor">
+
+
+
+	<!--INICIO CABECERA ******************************************************************** -->
+	<header>
+		<a href="index.html"> <img src="imagenes/logo.png"> </a>
+	</header>
+	<!--FIN CABECERA ******************************************************************** -->
+
+
+
+	<!--INICIO MENU ******************************************************************** -->
+		<nav>
+			<ul>
+        		<li><a href="index.html">Novedades</a></li>
+        		<li><a href="historia.html">Novela</a></li>
+        		<li><a href="productos.html">Cuentos</a></li>
+        		<li><a href="contacta.html">Contacta</a></li>
+    		</ul>
+            <a id="pull" href="#"><img src="imagenes/nav-icon_transparente.png"></a>
+
+		</nav>
+	<!--FIN MENU ******************************************************************** -->
+
+
+
+
+
+	<!--INICIO CONTENIDO ******************************************************************** -->    
+	<section>
+    
+    		<!--INICIO LIBRO 1 ******************************************************************** -->    
+			<article class="libro">
+				<img id="libro1" src="imagenes/libro1.jpg" onClick="MM_showHideLayers('contenedor','','hide','librogrande_1','','show')">
+                <h1>La inspiración dormida</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum nec metus nec vehicula. Sed venenatis id urna eget fringilla. Aliquam auctor, augue ut dictum mollis, ex purus feugiat sem, ac feugiat ipsum est ut urna. Vestibulum sodales massa nibh, nec tempor nisi condimentum sed. Pellentesque ac suscipit purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus ipsum ex, condimentum ac accumsan vel, malesuada vehicula dui.</h5>
+
+<h5>Nunc efficitur iaculis elit, malesuada ornare libero molestie sed. Nulla feugiat, risus lobortis commodo facilisis, quam justo tempor lectus, sed condimentum turpis ligula sed tortor. Maecenas vitae erat sit amet mi porttitor tristique. Donec faucibus tortor tortor, in bibendum enim ultrices vel. Duis vitae lorem interdum, fermentum erat sit amet, convallis nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent aliquam quam et scelerisque fringilla. Morbi elit lacus, egestas id nisl et, consectetur auctor neque.</h5>
+			<div id="vacia">
+            </div>	
+  			</article>
+	    	<!--FIN LIBRO 1 ******************************************************************** -->  
+              
+    		<!--INICIO LIBRO 2 ******************************************************************** -->    
+			<article class="libro">
+				<img id="libro2" src="imagenes/libro2.jpg" onClick="MM_showHideLayers('contenedor','','hide','librogrande_2','','show')">
+                <h1>El código Da Vinci</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum nec metus nec vehicula. Sed venenatis id urna eget fringilla. Aliquam auctor, augue ut dictum mollis, ex purus feugiat sem, ac feugiat ipsum est ut urna. Vestibulum sodales massa nibh, nec tempor nisi condimentum sed. Pellentesque ac suscipit purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus ipsum ex, condimentum ac accumsan vel, malesuada vehicula dui.</h5>
+
+<h5>Nunc efficitur iaculis elit, malesuada ornare libero molestie sed. Nulla feugiat, risus lobortis commodo facilisis, quam justo tempor lectus, sed condimentum turpis ligula sed tortor. Maecenas vitae erat sit amet mi porttitor tristique. Donec faucibus tortor tortor, in bibendum enim ultrices vel. Duis vitae lorem interdum, fermentum erat sit amet, convallis nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent aliquam quam et scelerisque fringilla. Morbi elit lacus, egestas id nisl et, consectetur auctor neque.</h5>
+			<div id="vacia">
+            </div>		
+  			</article>
+	    	<!--FIN LIBRO 2 ******************************************************************** -->  
+            
+            <!--INICIO LIBRO 3 ******************************************************************** -->    
+			<article class="libro">
+				<img id="libro3" src="imagenes/libro3.jpg" onClick="MM_showHideLayers('contenedor','','hide','librogrande_3','','show')">
+                <h1>Yo mataré mostruos por ti</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum nec metus nec vehicula. Sed venenatis id urna eget fringilla. Aliquam auctor, augue ut dictum mollis, ex purus feugiat sem, ac feugiat ipsum est ut urna. Vestibulum sodales massa nibh, nec tempor nisi condimentum sed. Pellentesque ac suscipit purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus ipsum ex, condimentum ac accumsan vel, malesuada vehicula dui.</h5>
+
+<h5>Nunc efficitur iaculis elit, malesuada ornare libero molestie sed. Nulla feugiat, risus lobortis commodo facilisis, quam justo tempor lectus, sed condimentum turpis ligula sed tortor. Maecenas vitae erat sit amet mi porttitor tristique. Donec faucibus tortor tortor, in bibendum enim ultrices vel. Duis vitae lorem interdum, fermentum erat sit amet, convallis nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent aliquam quam et scelerisque fringilla. Morbi elit lacus, egestas id nisl et, consectetur auctor neque.</h5>
+			<div id="vacia">
+            </div>	
+  			</article>
+	    	<!--FIN LIBRO 3 ******************************************************************** -->  
+  	<section>
+	<!--FIN CONTENIDO ******************************************************************** -->
+
+
+
+	<!--INICIO PIE ******************************************************************** -->	
+	<div id="footer">
+	    <h6>© Santiago Martín. FEMXA, 2016</h6>
+      
+	    <!--REDES SOCIALES ----------------- -->
+		<div class="footer-social-icons">
+    		<ul class="social-icons">
+        		<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+    		</ul>
+		</div>      
+        <!--FIN REDES SOCIALES ----------------- -->
+      
+      </div>
+	  <!--FIN PIE ******************************************************************** -->
+
+</div>
+<!--FIN CONTENEDOR ******************************************************************** -->
+
+
+<!--LIBROS AMPLIADOS ******************************************************************** -->
+	<div id="librogrande_1" onClick="MM_showHideLayers('contenedor','','show','librogrande_1','','hide')">
+    	<img src="imagenes/libro1.jpg">
+    </div>
+    <div id="librogrande_2" onClick="MM_showHideLayers('contenedor','','show','librogrande_2','','hide')">
+		<img src="imagenes/libro2.jpg">
+    </div>
+    <div id="librogrande_3" onClick="MM_showHideLayers('contenedor','','show','librogrande_3','','hide')">
+		<img src="imagenes/libro3.jpg">
+    </div>
+
+</body>
+</html>

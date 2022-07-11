@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*a.El color por defecto del enlace sea amarillo con fondo azul.*/
+a:link {
+    color: yellow;
+    background-color: blue;
+}
+
+/* b.Al pasar el ratón por encima el color del enlace sea negro y la letra esté en negrita y el fondo amarillo. */
+a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/* c.Cuando un enlace haya sido visitado el enlace aparecerá de color rojo y con fondo blanco. */
+a:visited {
+    color: red;
+    background-color: white;
+}

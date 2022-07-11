@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<style>
+    #contenedor{
+        display:flex;
+        display:-webkit-flex;
+        width:400px;
+        height: 250px;
+        background: gray;
+
+    }
+    .item{
+        background: orange;
+        width:100px;
+        height: 100px;
+        margin:10px;
+    }
+    .rojo{
+        background: red;
+        order: 2;
+    }
+    .blanco{
+        background: white;
+        order: 3;
+    }
+    .verde{
+        background: green;
+        order: 1;
+    }
+
+</style>
+<head>
+
+</head>
+<body>
+<div id="contenedor">
+    <div class="item rojo">Item1</div>
+    <div class="item blanco">Item2</div>
+    <div class="item verde">Item3</div>
+</div>
+
+</body>
+</html>

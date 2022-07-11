@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Caja adaptable centrada</title>
+<style type="text/css">
+body {
+	margin: 0px;
+}
+
+#contenedor {
+	height: 90%;
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	top: 5%;
+	background-attachment: fixed;
+	background-image: url(imagenes/Jaguar.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#borde {
+	height: 80%;
+	width: 70%;
+	position: absolute;
+	left: 15%;
+	top: 10%;
+	background-color: rgba(255,204,0,0.7);
+}
+#contenido {
+	height: 98%;
+	width: 98%;
+	position: absolute;
+	left: 1%;
+	top: 1%;
+	background-color: rgba(255,255,255,0.7);
+	overflow: hidden;
+}
+#contenido #texto {
+	padding: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+	font-size: 1em;
+}
+.invisiblecentrada {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	visibility: hidden;
+}
+
+#texto img {
+	clear: left;
+	height: auto;
+	width: 100%;
+}
+#imggrande img {
+	background-color: #6FC;
+	padding: 20px;
+	height: auto;
+	width: 60%;
+	border: 2px solid #03C;
+	margin: auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+#imggrande #textogrande {
+	color: #FFF;
+	background-color: rgba(100,100,100,0.8);
+	text-align: center;
+	display: block;
+	height: 7%;
+	width: 60%;
+	position: fixed;
+	bottom: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+	line-height: 1.8em;
+	font-weight: bold;
+	left: 20%;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+
+<div id="contenedor">
+	<div id="borde">
+		<div id="contenido">
+       	  <div id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit magna, vulputate sed viverra non, lobortis at neque. Cras sit amet tortor tempor, ultrices nibh non, finibus ipsum. Aliquam purus nisi, tristique quis tristique sed, laoreet id velit. Quisque neque justo, sodales at vehicula vel, vulputate a elit. Vestibulum eu lectus lacinia lectus consequat mattis sit amet vel augue. Donec sit amet libero in felis hendrerit eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sit amet elit vulputate leo ullamcorper bibendum condimentum non nulla. Nunc ac elit vel urna dictum tincidunt at sed nisl. Vestibulum lacinia nisi a sagittis condimentum.
+          <a href="#"><img src="imagenes/Jaguar.jpg" onClick="MM_showHideLayers('imggrande','','show')"></a>
+          </div>
+    	</div>
+    </div>
+
+</div>
+<div id="imggrande" class="invisiblecentrada">
+	<a href="#"><img src="imagenes/Jaguar.jpg" onClick="MM_showHideLayers('imggrande','','hide')"></a>
+    <div id="textogrande">
+    	Título de la imagen
+    </div>
+</div>
+
+
+</body>
+</html>

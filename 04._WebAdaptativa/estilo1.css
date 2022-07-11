@@ -1,0 +1,66 @@
+/* hoja de estilos para una vista de más de 768px de ancho */
+body {
+    background-color: aqua;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.flex-items:nth-child(1) {
+    background-color: pink;
+    height: 100px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(2) {
+    height: 200px;
+    background-color: gray;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+footer {
+    flex: 0 0 auto;
+    color: white;
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .facet_sidebar {
+        display: none;
+    }
+}

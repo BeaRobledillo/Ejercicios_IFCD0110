@@ -1,0 +1,25 @@
+/* estilos para tablas */
+h3 {
+    text-align: center;
+}
+
+table {
+    border: solid black 3px;
+    margin: 0 auto;
+    /* border-spacing: -0px; */
+    border-collapse: collapse;
+}
+
+td {
+    border: solid black 2px;
+}
+
+td:first-child {
+    color: blue;
+    background-color: yellow;
+}
+
+.ulti {
+    color: tomato;
+    background-color: grey;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<head>
+<style>
+    #contenedor{
+        display:flex;
+        display:-webkit-flex;
+        width:400px;
+        height: 250px;
+        background: gray;
+
+    }
+    .item{
+        background: orange;
+        height: 100px;
+        margin:10px;
+    }
+    .item1{
+        flex-grow:5;
+        -webkit-flex-grow:5;
+    }
+    .item2{
+        flex-grow:1;
+        -webkit-flex-grow:1;
+    }
+    .item3{
+        flex-grow:5;
+        -webkit-flex-grow:5;
+    }
+    
+</style>
+
+
+</head>
+<body>
+<div id="contenedor">
+    <div class="item item1">Item1</div>
+    <div class="item item2">Item2</div>
+    <div class="item item3">Item3</div>
+</div>
+
+</body>
+</html>

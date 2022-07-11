@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bea Robledillo Gómez" />
+    <!-- b.Crear un archivo CSS independiente y enlazarlo con el documento html: -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <title>Estilos CSS</title>
+    <!--PREGUNTAS/ACTIVIDADES A REALIZAR
+    1.Dado el siguiente documento html, realizar los cambios oportunos para separar el contenido del documento de la
+    información relacionada con la presentación. Habrá que eliminar la información de estilos de las etiquetas html y
+    crear reglas CSS.
+    a.Ubicar las reglas CSS de forma incrustada dentro del documento html.
+    b.Crear un archivo CSS independiente y enlazarlo con el documento html.
+    c.¿Cuáles son las ventajas de usar las hojas de estilo?
+    d.¿Cuáles son las distintas formas en que se pueden utilizar las hojas de estilo?
+    e.Describe las partes y la sintaxis de una hoja de estilos. 
+    Documento html:
+            <h1 style="font-size:50px; color:blue; font-family:Verdana">Titular de la página</font></h1>
+            <h2 style="font-size:30px; color:red; font-family:Arial">Subtítulo de la página</h2>
+            <p style="font-size:20px; color:yellow; font-family:Arial; background: black">Un párrafo de textocomootrocualquiera.</p>    
+     -->
+    <!--   a.Ubicar las reglas CSS de forma incrustada dentro del documento html:  -->
+    <style type="text/css" media="screen">
+        h1 {
+            color: blue;
+            font-family: Verdana;
+            font-size: 50px;
+        }
+
+        h2 {
+            color: red;
+            font-family: Arial;
+            font-size: 30px;
+        }
+
+        p {
+            color: yellow;
+            font-family: Arial;
+            background: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titular de la página</h1>
+
+    <h2>Subtítulo de la página</h2>
+
+    <p>Un párrafo de texto como otro cualquiera.</p>
+
+    <h3>¿Cuáles son las ventajas de usar las hojas de estilo?</h3>
+    <ul>
+        <li><u>Más fácil de usar:</u> permiten guardar y almacenar los estilos por separado. </li>
+        <li><u>Más accesibles:</u> permiten modificar el formato de una página web según sean las necesidades del
+            usuario. </li>
+        <li><u>Más optimizados:</u> La hoja de estilo se almacena en cache y no tiene que descargar la página web una y
+            otra vez.</li>
+        <li><u>Multidispositivo:</u> permiten configurar la página para diferentes dispositivos, como son móviles,
+            tablets, etc.</li>
+    </ul>
+
+    <h3>¿Cuáles son las distintas formas en que se pueden utilizar las hojas de estilo?</h3>
+    <ul>
+        <li>Incluir CSS en etiquetas (Estilos CSS inline)</li>
+        <li>Incluir CSS en una página (Hojas de estilo CSS embebidas)</li>
+        <li>Incluir CSS en un archivo aparte (Hojas de estilo CSS externas)</li>
+    </ul>
+
+    <h3>Describe las partes y la sintaxis de una hoja de estilos:</h3>
+    <pre> Selector {  propiedad :  valor ;  } </pre>
+
+    <ul>
+        <li>Selector: indica el elemento o elementos HTML a los que se aplica la regla CSS.</li>
+        <li>Declaración: especifica los estilos que se aplican a los elementos. Esta compuesta por una o mas propiedades
+            CSS con sus valores.</li>
+        <li>Propiedad: permite modificar el aspecto de una caracteristica del elemento.</li>
+        <li>Valor: indica el nuevo valor de la caracteristica modificada en el elemento.</li>
+    </ul>
+</body>
+
+</html>

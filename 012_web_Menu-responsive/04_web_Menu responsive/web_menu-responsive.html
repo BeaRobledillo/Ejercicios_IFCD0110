@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<!-- viewport meta to reset iPhone inital scale -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>Crear diseño responsive</title>
+
+<!-- css3-mediaqueries.js for IE8 or older -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<style type="text/css">
+
+body {
+	font: 1em/150% Arial, Helvetica, sans-serif;
+	/******************************************************
+	1em es el tamaño de la fuente y 150% es el interlineado
+	*******************************************************/
+	}
+a {
+	color: #669;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: bold;
+}
+h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}
+
+/* Clearfix --- 
+ocultamos el enlace que sólo se mostrará cuando el tamaño de pantalla sea más pequeño*/
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+ 
+.clear:after {
+    clear: both;
+}
+ 
+.clear {
+    *zoom: 1;
+}
+ 
+a#pull {
+    display: none;
+}
+
+/* Estilo de la navegación ---*/
+nav {
+    height: 40px;
+    width: 100%;
+    background: #666;
+    position: relative;
+    border-bottom: solid 1px #DDD;
+}
+ 
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+ 
+nav li {
+    display: inline;
+    float: left;
+}
+ 
+nav a {
+    color: #FFF;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+}
+ 
+nav li a {
+    border-right: 1px solid #576979;
+}
+ 
+nav li:last-child a {
+    border-right: 0;
+}
+ 
+nav a:hover, nav a:active {
+    background-color: #333;
+}
+
+
+/************************************************************************************
+ESTRUCTURA
+*************************************************************************************/
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+	/******************************************************
+	la opción auto, centra horizontalmente la capa PAGEWRAP
+	*******************************************************/
+}
+#header {
+	height: 180px;
+}
+#content {
+	width: 600px;
+	float: left;
+}
+#sidebar {
+	width: 300px;
+	float: right;
+}
+#footer {
+	clear: both;
+	/******************************************************
+	clear: both, hace que esta capa se coloque debajo de las capas flotantes superiores
+	*******************************************************/
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* para 1000px o menos */
+@media screen and (max-width: 1000px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+
+}
+
+/* para 700px o menos */
+@media screen and (max-width: 700px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* para 600 o menos */
+@media only screen and (max-width : 600px) {
+    nav {
+        border-bottom: 0;
+        height: auto;
+    }
+ 
+    nav ul {
+        display: none;
+        height: auto;
+        width: 100%;
+    }
+ 
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+ 
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+ 
+    nav a#pull {
+        display: block;
+        background-color: #666;
+        width: 100%;
+		position: static;
+    }
+ 
+    nav a#pull:after {
+        content:"";
+        background: url('nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+/*---------- cambiamos el tamaño de la cabecera y ocultamos la barra lateral */
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		display: none;
+	}
+}
+
+/* bordes fondos y guías (puedes ignorarlo) */
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+#header, #content, #sidebar {
+	margin-bottom: 5px;
+}
+#pagewrap, #header, #content, #sidebar, #footer {
+	border: solid 1px #ccc;
+}
+
+</style>
+<!-- Ahora insertamos el Js que hace que el menu se pliegue y despliegue -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
+</script>
+</head>
+
+<body>
+
+<div id="pagewrap">
+
+	<div id="header">
+		<h1>Cabecera</h1>
+	</div>
+
+		<nav>
+			<ul>
+        		<li><a href="#">Sección 1</a></li>
+        		<li><a href="#">Sección 2</a></li>
+        		<li><a href="#">Sección 3</a></li>
+        		<li><a href="#">Sección 4</a></li>
+        		<li><a href="#">Sección 5</a></li>
+    		</ul>
+            <a id="pull" href="#"><img src="nav-icon_transparente.png"></a>
+
+		</nav>
+        
+	<div id="content">
+		<h2>Contenido</h2>
+		<p>texto</p>
+		<p>texto</p>
+		<p>texto</p>
+		<p>texto</p>
+		<p>texto</p>
+		<p>texto</p>
+		<p>texto</p>
+		<p>texto</p>
+		<p>texto</p>
+		<p>texto</p>
+	</div>
+
+	<div id="sidebar">
+		<h3>Barra lateral</h3>
+		<p>texto</p>
+		<p>texto</p>
+	</div>
+	
+	<div id="footer">
+		<h4>Pie de página</h4>
+	</div>
+
+</div>
+
+</body>
+</html>

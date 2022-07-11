@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<style>
+    #contenedor{
+        display:flex;
+        display:-webkit-flex;
+        width:400px;
+        height: 250px;
+        background: gray;
+        /*flex-start - Valor por omisión. Alinea al inicio del eje principal*/
+        justify-content: flex-start;
+
+        /*flex-end - Alinea al final del eje principal*/
+        justify-content: flex-end;
+
+        /*center - Alinea al centro del eje principal*/
+        justify-content: center;
+
+         /*space-between - Los items son alineados en el eje pegado a sus costados*/
+        justify-content: space-between;
+
+        /*space-around - Los items son colocados proporcionalmente*/
+        justify-content: space-around;
+
+    }
+    .item{
+        background: orange;
+        width:100px;
+        height: 100px;
+        margin:10px;
+    }
+
+</style>
+<head>
+
+</head>
+<body>
+<div id="contenedor">
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+</div>
+
+</body>
+</html>

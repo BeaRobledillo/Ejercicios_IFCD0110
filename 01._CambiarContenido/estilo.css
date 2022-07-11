@@ -1,0 +1,19 @@
+/* b.Crear un archivo CSS independiente y enlazarlo con el documento html: */
+h1 {
+    color: blue;
+    font-family: Verdana;
+    font-size: 50px;
+}
+
+h2 {
+    color: red;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+p {
+    color: yellow;
+    font-family: Arial;
+    background: black;
+    font-size: 20px;
+}

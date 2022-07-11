@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*flex para toda la section*/
+section {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: baseline; baseline se alinean arriaba->linea base*/
+    flex-wrap: wrap;
+}
+
+/*solo los div del section*/
+section div {
+    background-color: #ccc;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; funciona si no usamos flex*/
+    font-size: 3em;
+}
+
+/*pseudo ultimo div
+section  div:last-child{
+    height: 200px;
+}*/
+section div:first-child {
+    background-color: #f00;
+}
+
+section div:last-child {
+    background-color: #0f0;
+}
+
+/*las mediasquerie hay que ponerlas x orden*/
+@media (max-width:1024px){
+    section div{
+        width: 50%;
+        font-size: 2em;
+        background-color: #00f;
+    }
+}
+
+/*se pone al 100x100*/ /*en movil*/
+@media(max-width:768px){
+    section div{
+        width: 100%;
+        font-size: 1em;
+    }
+    section div:last-child{ /*eliminar capa 4 en moviles*/
+        display: none;
+    }
+}
+

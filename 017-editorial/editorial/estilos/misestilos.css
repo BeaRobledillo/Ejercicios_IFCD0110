@@ -1,0 +1,474 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* REDES SOCIALES */
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.footer-social-icons a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-social-icons p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+
+.footer-social-icons h5
+ {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+.footer-social-icons ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+	font-family: 'Lato', sans-serif;
+	color: #FFF;
+	-webkit-font-smoothing: antialiased;
+	width: 267px;
+	display: block;
+	margin: 0 auto;
+	background-color: #000000;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 5%;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+/* FIN REDES SOCIALES */
+
+/************************************************************************************
+Mis estilos
+*************************************************************************************/
+*{
+	margin: 0px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+body {
+	background-color: rgba(204,255,204,0.8);
+}
+
+
+h1 {
+	color: rgb(51,102,51);
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.8em;
+	padding-top: 1.5em;
+	font-family: "SchoolHouse Cursive B", "Comic Sans MS", cursive;
+}
+
+
+h5 {
+	color: rgb(51,51,51);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	text-align: justify;
+	padding: 2%;
+}
+
+h6 {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2em;
+}
+
+#contenedor {
+	background-color: rgba(204,204,204,0.8);
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header {
+	background-image: url(../imagenes/cab.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	width: 100%;
+	clear: both;
+	height: 150px;
+}
+
+header img {
+	padding: 1%;
+	height: auto;
+	width: 180px;
+}
+
+section {
+	padding: 1%;
+	height: auto;
+	width: 98%;
+}
+
+.libro {
+	background-color: rgba(204,0,204,0.1);
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin-bottom: 2%;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #666;
+}
+
+.libro img {
+	float: left;
+	height: auto;
+	width: 25%;
+	margin-right: 3%;
+	margin-bottom: 2%;
+	-moz-box-shadow: 10px 10px 51px #1c191c;
+	-webkit-box-shadow: 10px 10px 51px #1c191c;
+	box-shadow: 10px 10px 51px #1c191c;
+	border: 1px solid #333;
+	padding: 1%;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+
+#vacia {
+	clear: both;
+	float: none;
+	height: 0.1%;
+}
+
+#footer {
+	height: 8%;
+	background-color: #000;
+}
+
+#librogrande_1 {
+	margin: auto;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	visibility: hidden;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+#librogrande_1 img {
+	margin: auto;
+	height: 80%;
+	width: auto;
+	border: medium solid #939;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+#librogrande_2 {
+	margin: auto;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	visibility: hidden;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+#librogrande_2 img {
+	margin: auto;
+	height: 80%;
+	width: auto;
+	border: medium solid #939;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+#librogrande_3 {
+	margin: auto;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	visibility: hidden;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+#librogrande_3 img {
+	margin: auto;
+	height: 80%;
+	width: auto;
+	border: medium solid #939;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+
+
+
+
+
+
+/* Clearfix --- 
+ocultamos el enlace que sólo se mostrará cuando el tamaño de pantalla sea más pequeño*/
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+ 
+.clear:after {
+    clear: both;
+}
+ 
+.clear {
+    *zoom: 1;
+}
+ 
+a#pull {
+    display: none;
+}
+
+/* Estilo de la navegación ---*/
+nav {
+    height: 40px;
+    width: 100%;
+    background: #666;
+    position: relative;
+    border-bottom: solid 1px #DDD;
+}
+ 
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+ 
+nav li {
+	display: inline;
+	float: left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+}
+ 
+nav a {
+    color: #FFF;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+}
+ 
+nav li a {
+    border-right: 1px solid #576979;
+}
+ 
+nav li:last-child a {
+    border-right: 0;
+}
+ 
+nav a:hover, nav a:active {
+    background-color: #333;
+}
+
+
+
+
+
+/************************************************************************************
+MEDIA QUERY
+*************************************************************************************/
+
+/* para 600 o menos */
+@media (max-width: 600px) {
+    nav {
+        border-bottom: 0;
+        height: auto;
+    }
+ 
+    nav ul {
+        display: none;
+        height: auto;
+        width: 100%;
+    }
+ 
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+ 
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+ 
+    nav a#pull {
+        display: block;
+        background-color: #666;
+        width: 100%;
+		position: static;
+    }
+ 
+    nav a#pull:after {
+        content:"";
+        background: url('../imagenes/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+		
+	.libro {
+	background-color: rgba(255,255,255,0.8);
+	margin-bottom: 3%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	}
+	.libro img {
+	width: 80%;
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	left: 8%;
+	}
+
+	header {
+	height: auto;
+	background-image: none;
+	}
+
+
+	header img {
+	height: auto;
+	width: 30%;
+	position: relative;
+	left: 35%;
+	}
+		
+	h1 {
+		font-size: 1.2em;
+	}
+	
+	h5 {
+		font-size: 0.95em;
+	}
+	body {
+	background-color: rgba(204,255,204,0.1);
+	}
+}	
+	
+	
+	
+/************************************************************************************
+FIN MEDIA QUERY
+*************************************************************************************/

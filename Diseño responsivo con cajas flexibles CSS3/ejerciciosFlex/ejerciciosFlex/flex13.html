@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<head>
+<style>
+    #contenedor{
+        display:flex;
+        display:-webkit-flex;
+        width:300px;
+        height: 250px;
+        background: gray;
+
+    }
+    .item{
+        background: orange;
+        -webkit-flex-grow: 0; /* Safari 6.1+ */
+        -webkit-flex-shrink: 0; /* Safari 6.1+ */
+        -webkit-flex-basis: 100px; /* Safari 6.1+ */
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 100px;
+        margin: 10px;
+    }
+    .item1{
+        -webkit-flex-basis: 40px; /* Safari 6.1+ */
+        flex-basis: 40px;
+    }
+    
+</style>
+
+
+</head>
+<body>
+<div id="contenedor">
+    <div class="item">Item1</div>
+    <div class="item item1 ">Item2</div>
+    <div class="item">Item3</div>
+</div>
+
+</body>
+</html>

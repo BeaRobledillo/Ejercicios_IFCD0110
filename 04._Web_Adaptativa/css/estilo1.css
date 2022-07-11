@@ -1,0 +1,83 @@
+/* hoja de estilos para una vista de más de 768px de ancho */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*todo el body color aqua y el texto centrado*/
+body {
+    text-align: center;
+    background-color: aqua;
+}
+
+header {
+    margin: 10px;
+    padding: auto;
+}
+
+/*flex para toda la section*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+/*solo los div del section*/
+section div {
+    margin: 10px;
+    background-color: #ccc;
+    width: 40%;
+    height: 300px;
+}
+
+/* La caja de la izquierda tiene una altura de 100px y la caja de la derecha de 200px.  */
+/*caja izquierda color rosa y dercha gris*/
+.flex-item-left {
+    background-color: pink;
+    height: 100px;
+    padding: 10px;
+    flex: 40%;
+}
+
+.flex-item-right {
+    background-color: gray;
+    height: 200px;
+    padding: 10px;
+    flex: 40%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;
+    justify-content: space-between; */
+    /* text-align: center; funciona si no usamos flex*/
+}
+
+footer div {
+    margin: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+/*las mediasqueries hay que ponerlas x orden si pusieramos varias*/
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+        background-color: white;
+    }
+
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+        width: 40%;
+    }
+
+    footer div {
+        flex: 100%;
+    }
+
+}

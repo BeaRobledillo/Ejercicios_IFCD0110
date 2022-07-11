@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <style>
+  nav {
+    background:orange;
+    margin:0;
+    padding:0;
+    display:flex;
+    display:-webkit-flex;
+    justify-content: space-around;
+  }
+  nav a{
+    color:#333;
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+  }
+  div{
+    flex:1 1 auto;
+  }
+  div:hover{
+    background: yellow;
+  }
+  @media all and (max-width: 600px){
+    nav{
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  }
+  </style>
+  </head>
+  <body>
+ <nav>
+   <div><a href="#">Inicio</a></div>
+   <div><a href="#">Productos</a></div>
+   <div><a href="#">E-Books</a></div>
+   <div><a href="#">Cursos</a></div>
+   <div><a href="#">Libros</a></div>
+   <div><a href="#">Video cursos</a></div>
+ </nav>
+  </body>
+</html>

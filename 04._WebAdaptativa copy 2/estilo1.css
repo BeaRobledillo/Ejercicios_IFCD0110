@@ -1,0 +1,63 @@
+/* hoja de estilos para una vista de más de 768px de ancho */
+header {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    background: red;
+    height: 300px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    /* start, end, center. justify teilt gleichmäßig auf */
+    -webkit-box-align: center;
+    /* start, end, center. stretch streckt die Childs auf die ganze Höhe, wenn diese keine explizite Höhe angegeben haben. */
+    -webkit-box-direction: reverse;
+    /* dreht Ausrichtung um */
+    -ms-box-pack: center;
+    -ms-box-align: center;
+    -ms-align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    /* flex-start, flex-end */
+    align-items: center;
+}
+
+.child {
+    background: green;
+    margin: 10px;
+    height: 100px;
+    width: 20%;
+    display: -webkit-box;
+}
+
+.child1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 3;
+    -ms-box-ordinal-group: 3;
+    -ms-order: 3;
+    order: 3;
+}
+
+.child2 {
+    -webkit-box-flex: 1;
+    -webkit-box-ordinal-group: 1;
+    -webkit-box-align: center;
+    height: 50px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+}

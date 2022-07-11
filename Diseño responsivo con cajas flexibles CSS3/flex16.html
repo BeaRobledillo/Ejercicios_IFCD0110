@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style> 
+*{
+  margin:0;
+  padding: 0;
+}
+html{
+  background:#A8888D;
+}
+p{
+  font-size: 18px;
+  text-align: justify;
+  padding: 10px;
+}
+.contenedor {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+/*Seleccionamos todos los elementos dentro del contenedor*/
+.contenedor > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.articulo {
+    text-align: left;
+    background: #B49197; 
+}
+
+.header {background: #A68181;}
+.footer {background: #927375;}
+.aside1 {background: #BC9EAA;}
+.aside2 {background: #BC9EAA;}
+
+/*Movil*/
+@media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+}
+/*Tabletas*/
+@media all and (min-width: 800px) {
+    .articulo   { flex: 3 0px; }
+    .aside1 { order: 1; } 
+    .articulo   { order: 2; }
+    .aside2 { order: 3; }
+    .footer { order: 4; }
+}
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+  <header class="header"><h1>Afrodita, diosa del amor</h1></header>
+  <article class="articulo">
+    <p>Afrodita tiene numerosas equivalentes: Inanna en la mitología sumeria, Astarté en la fenicia, Turan en la etrusca y Venus en la romana. Tiene paralelismos con diosas indoeuropeas de la aurora, tales como Ushás o Aurora. Según Pausanias, los primeros que establecieron su culto fueron los asirios, y tras ellos los pafosianos de Chipre y los fenicios que vivían en Ascalón (Palestina), quienes enseñaron su culto a los habitantes de Citera. Se decía que Afrodita podía hacer que cualquier hombre se enamorase de ella con solo poner sus ojos en él.</p>
+    <p>La ‘surgida de la espuma’ Afrodita nació del mar, cerca de Pafos (Chipre) después de que Crono cortase durante la Titanomaquia los genitales a Urano con una hoz adamantina y los arrojase tras él al mar. </p>
+    <p>En su Teogonía, Hesíodo cuenta que los genitales «fueron luego llevados por el piélago durante mucho tiempo. A su alrededor surgía del miembro inmortal una blanca espuma y en medio de ella nació una doncella» ya adulta. </p>
+  </article>
+  <aside class="aside aside1"><img src="diosas/afrodita208x312.jpg" /></aside>
+  <aside class="aside aside2"><img src="diosas/afrodita208x312.png" /></aside>
+  <footer class="footer">Todos los derechos reservados &copy;</footer>
+</div>
+
+</body>
+</html>

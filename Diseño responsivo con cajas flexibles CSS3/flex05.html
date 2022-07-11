@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<style>
+    #contenedor{
+        display:flex;
+        display:-webkit-flex;
+        width:300px;
+        height: 250px;
+        background: gray;
+
+        /*nowrap: valor por omisión*/
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+        /*wrap: Los elementos flexibles se envuelven si es necesario*/
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        /*wrap-reverse - Los elementos flexibles se envuelven, si es necesario, en orden inverso.*/
+        -webkit-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .item{
+        background: orange;
+        width:100px;
+        height: 100px;
+        margin:10px;
+    }
+
+</style>
+<head>
+
+</head>
+<body>
+<div id="contenedor">
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+</div>
+
+</body>
+</html>

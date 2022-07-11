@@ -1,0 +1,17 @@
+/* hoja de estilos para una vista de menos de 768px de ancho */
+body {
+    background-color: aqua;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+footer {
+    color: white;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <style>
+    section{
+      width:350px;
+      height: 250px;
+      border: 1px solid black;
+
+      display: -webkit-flex;
+      display:flex;
+
+      -webkit-direction:row;
+      flex-direction:row;
+    }
+
+    div{
+      -webkit-flex:1 1 auto;
+      flex:1 1 auto;
+      width:  30px;
+      text-align: center;
+
+      -webkit-transition: width 1s ease-out;
+      transition: width 1s ease-out;
+    }
+
+    div:hover{width:200px;}
+
+    div:nth-child(1){background:green;}
+    div:nth-child(2){background:white;}
+    div:nth-child(3){background:red;}
+  
+  </style>
+  </head>
+  <body>
+    <section>
+      <div>verde</div>
+      <div>blanco</div>
+      <div>rojo</div>
+    </section>
+  </body>
+</html>

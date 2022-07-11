@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<style>
+    #contenedor{
+        display:flex;
+        display:-webkit-flex;
+
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        /*stretch: Valor por defecto. Líneas (renglones) estiran para ocupar el espacio restante*/
+        -webkit-align-content: stretch ;
+        align-content: stretch;
+
+        /*flex-start: Líneas están llenas hacia el inicio del contenedor flexible*/
+        -webkit-align-content: flex-start;
+        align-content: flex-start;
+
+        /*flex-end: Líneas están llenas hacia el final del contenedor flexible*/
+        -webkit-align-content: flex-end;
+        align-content: flex-end;
+
+        /*center: Líneas de centro se embalan hacia el centro del contenedor*/
+        -webkit-align-content: center;
+        align-content: center;
+
+        /*space-between: Líneas se distribuyen de manera uniforme en el contenedor*/
+        -webkit-align-content: space-between;
+        align-content: space-between;
+
+        /*space-around - Las líneas se distribuyen uniformemente en el contenedor de la flexión, con espacios de tamaño medio en cada extremo*/
+        -webkit-align-content: space-around;
+        align-content: space-around;
+
+        width:300px;
+        height: 300px;
+        background: gray;
+
+    }
+    .item{
+        background: orange;
+        width:100px;
+        height: 100px;
+        margin:10px;
+    }
+
+</style>
+<head>
+
+</head>
+<body>
+<div id="contenedor">
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+</div>
+
+</body>
+</html>

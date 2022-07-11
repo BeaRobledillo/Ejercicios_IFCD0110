@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- viewport meta to reset iPhone inital scale -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>WEB responsive</title>
+
+<!-- css3-mediaqueries.js for IE8 or older -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/blueberry.css" />
+<link rel="stylesheet" href="css/mis_estilos.css" />
+<style type="text/css">
+/* para 1920px o menos */
+@media screen and (max-width: 1920px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: auto;
+		float: none;
+}
+	#sidebar {
+		width: 0%;
+		display: none;
+	}	
+}
+
+/* para 800px o menos */
+@media screen and (max-width: 800px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		display: none;
+	}
+}
+</style>
+
+<!-- Ahora insertamos el Js que hace que el menu se pliegue y despliegue -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
+</script>
+
+<!-- controles del slider -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="js/jquery.blueberry.js"></script>
+
+<script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div id="pagewrap">
+
+	<div id="header">
+		<a href="index.html"> <img src="images/logo_mardeasa.png"> </a>
+	</div>
+
+		<nav>
+			<ul>
+        		<li><a href="index.html">Inicio</a></li>
+        		<li><a href="historia.html">Historia</a></li>
+        		<li><a href="productos.html">Productos</a></li>
+        		<li><a href="contacta.html">Contacta</a></li>
+    		</ul>
+            <a id="pull" href="#"><img src="images/nav-icon_transparente.png"></a>
+
+		</nav>
+        
+	<div id="content">
+		<h2>Productos</h2>
+        	<!-- blueberry -->
+
+		    <div class="blueberry">
+		      <ul class="slides">
+ 		       <li><img src="http://marktyrrell.com/labs/blueberry/img/slide1.jpg" /></li>
+ 		       <li><img src="http://marktyrrell.com/labs/blueberry/img/slide2.jpg" /></li>
+ 		       <li><img src="http://marktyrrell.com/labs/blueberry/img/slide3.jpg" /></li>
+ 		       <li><img src="http://marktyrrell.com/labs/blueberry/img/slide4.jpg" /></li>
+ 		     </ul>
+ 		   </div>
+		   <!-- blueberry -->
+
+ 	</div>
+
+
+	
+	<div id="footer">
+	  <h4>© Santiago Martín. FEMXA, 2016</h4>
+	     <!--REDES SOCIALES ----------------- -->
+
+		<div class="footer-social-icons">
+    		<ul class="social-icons">
+        		<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        		<li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+    		</ul>
+		</div>
+      
+      <!--FIN REDES SOCIALES ----------------- -->
+      </div>
+
+</div>
+
+</body>
+</html>

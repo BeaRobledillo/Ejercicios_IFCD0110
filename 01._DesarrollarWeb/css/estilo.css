@@ -1,0 +1,91 @@
+/*Reseteo CSS genérico*/
+* {
+    box-sizing: border-box;
+    /*Para no tener que andar restando bordes y paddings de las medidas*/
+    margin: 0;
+    padding: 0;
+    /*Eliminamos espacios por defecto del html, body o ul que usaremos*/
+}
+
+/* fondo de la página un color plata.*/
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #e3e4e5;
+}
+
+/*encabezado que ocupará todo el ancho disponible. Color de fondo marrón y letras de color blanco. */
+header {
+    width: 100%;
+    height: 150px;
+    background-color: brown;
+    color: white;
+}
+
+/*título centrado*/
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/*Las opciones estarán distribuidas de forma horizontal y el menú centrado*/
+/* Color de fondo del menú cyan claro y color de los botones de opciones khaki. Los botones tendrán un borde punteado.*/
+.menu {
+    background-color: lightcyan;
+    text-align: center;
+}
+
+.menu>li {
+    /*Alineamos los li*/
+    display: inline-block;
+    background-color: khaki;
+    border-style: dotted;
+}
+
+/*Las opciones no mostrarán el texto subrayado ni ninguna de las características típicas de los enlaces.*/
+a {
+    text-decoration: none;
+}
+
+/*Al pasar el ratón por encima de alguna opción cambiará el color del texto a rojo.*/
+a:hover {
+    color: red;
+}
+
+/*el fondo del título del artículo fondo amarillo claro.*/
+h2 {
+    margin: 0;
+    padding-top: 40px;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+/*El párrafo tendrá un color de fondo rosa,*/
+p {
+    background-color: lightpink;
+}
+
+/*La primera letra del texto tendrá un estilo especial, tendrá tamaño extragrande, color rojo y en negrita. */
+p:first-letter {
+    font-size: xx-large;
+    color: red;
+    font-weight: bold;
+}
+
+/*g.El pie de la página tendrá un fondo marrón con letras blancas alineadas al centro, ocupará el 60% del ancho y tendrá bordes redondeados.*/
+footer {
+    width: 60%;
+    height: 50px;
+    background-color: brown;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
